@@ -1,14 +1,14 @@
-# IoT Environmental Monitoring System (ESP32)
+#IoT Environmental Monitoring System (ESP32)
 
-Этот проект - моя первая работа с микроконтроллером ESP32.
-Идея проекта появилась после анализа проблем в агропромышленности, связанных с хранением продуктов питания.
-Были выявлены несколько проблем:
-1) Сложность соблюдения норм и условий хранения продуктов.
-2) Отсутствие полностью автоматизированных систем контроля условий хранения.
-3) Потери продукции из-за порчи и заболеваний овощей.
-В качестве решения была предложена идея автоматизированной встроенной системы мониторинга и управления условиями хранения картофеля  одного из самых распространённых сельскохозяйственных продуктов.
+This project is my first experience working with the ESP32 microcontroller. The idea for the project appeared after analyzing problems in the agricultural industry related to food storage.
+Several key issues were identified:
+Difficulty maintaining proper storage standards and environmental conditions.
+Lack of fully automated monitoring systems for storage facilities.
+Loss of agricultural products due to spoilage and disease.
+As a solution, an automated embedded monitoring and control system was proposed for potato storage facilities, since potatoes are one of the most widely consumed agricultural products.
+The project is designed as a prototype IoT system for real-world storage monitoring and environmental control.
 
-Sensors:
+Sensors:                                
 - DHT22 (temperature & humidity)
 - MQ gas sensor
 - Photoresistor (light level)
@@ -30,6 +30,20 @@ Technologies Used
 - WiFi
 - HiveMQ Cloud
 - Wokwi simulation
+
+- System Architecture
+
+Sensors
+  ↓
+ESP32 Controller
+  ↓
+Decision Logic
+  ↓
+Control Actions
+  ↓
+MQTT Telemetry
+  ↓
+Cloud Monitoring
 
 
 
@@ -53,9 +67,9 @@ Planned features:
 
 Проект рассматривается как прототип IoT-системы для реального рынка.
 
-//Проект еще не до конца завершен.//
+This project is still under development.
 
-update: Добавлена телеметрия, подключение к WIFI и MQTT. Данные в виде строк состояний скидываются в специальную консоль
+update: Added telemetry, WiFi connectivity, and MQTT communication. Sensor states are transmitted to a cloud console via MQTT.
 
 
 <img width="892" height="610" alt="image" src="https://github.com/user-attachments/assets/62b5eddf-ee85-452b-8849-79ab43ae8fde" />
