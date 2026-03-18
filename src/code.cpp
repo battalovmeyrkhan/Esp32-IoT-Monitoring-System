@@ -18,11 +18,11 @@ PubSubClient client(espClient);
 
 
 
-const char* mqtt_server = "";
+const char* mqtt_server = "your-server";
 const int mqtt_port = 8883;
 
-const char* mqtt_user = "";
-const char* mqtt_pass = "";
+const char* mqtt_user = "your-user";
+const char* mqtt_pass = "your-password";
 
 unsigned long lastPublish = 0;
 
