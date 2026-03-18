@@ -18,7 +18,7 @@ PubSubClient client(espClient);
 
 
 
-const char* mqtt_server = "your-server";
+const char* mqtt_server = "your-broker-url";
 const int mqtt_port = 8883;
 
 const char* mqtt_user = "your-user";
